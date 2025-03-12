@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AKKO</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url('akko.jpg') no-repeat center center/cover;
+        }
+        .box {
+            width: 500px;
+            height: 50px;
+            background-color: #b581e6;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 10px;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: width 0.5s, height 0.5s;
+        }
+        .box:hover {
+            width: 400px;
+            height: 450px;
+        }
+        .box img, .box button {
+            display: none;
+            position: absolute;
+        }
+        .box:hover img {
+            display: block;
+            width: 100%;
+            height: auto;
+            top: 0;
+        }
+        .box:hover button {
+            display: block;
+            bottom: 5px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px;
+            background-color: #0c3c16;
+            border: none;
+            color: white;
+            font-size: 20px;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Presiona aquí
+        <img src="Imagen1.jpg" alt="Imagen" />
+        <button onclick="window.location.href='nuevaPagina.html';">Haz click aquí</button>
+        </a>
+    </div>
+</body>
+</html>
+

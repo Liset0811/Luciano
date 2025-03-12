@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Era fácil</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background: url('elden.jpeg') no-repeat center center/cover;
+            color: white;
+            flex-direction: column;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            font-size: 40px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .text-left, .text-right {
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+            margin: 10px; 
+            text-align: center;
+        }
+        .text-left {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .text-right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        img {
+            width: 70%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 30px;
+            }
+            .text-left, .text-right {
+                font-size: 18px;
+                margin: 5px;
+            }
+            img {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body onclick="window.location.href='index.html'">
+    <h1>Te dije que era fácil</h1>
+    <div class="container">
+        <div class="text-left">
+            <span>A</span>
+            <span>K</span>
+            <span>K</span>
+            <span>O</span>
+        </div>
+        <img src="facil.jpg" alt="Imagen fácil" />
+        <div class="text-right">
+            <span>L</span>
+            <span>U</span>
+            <span>C</span>
+            <span>K</span>
+            <span>Y</span>
+        </div>
+    </div>
+</body>
+</html>
+
+
